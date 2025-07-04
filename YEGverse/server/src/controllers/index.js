@@ -8,7 +8,7 @@ const getHome = (req, res) => {
 // User controller function
 const createUser = async (req, res) => {
     try {
-        const { firebaseUid, email, username } = req.body;
+        const { firebaseUid, email, username, displayName, photoURL, provider } = req.body;
         
         // Check if user already exists
         const existingUser = await User.findOne({ firebaseUid });
@@ -20,7 +20,10 @@ const createUser = async (req, res) => {
         const newUser = new User({
             firebaseUid,
             email,
-            username
+            username: username || email.split('@')[0],
+            displayName: displayName || username || email.split('@')[0],
+            photoURL: photoURL || null,
+            provider: provider || 'email'
         });
         
         await newUser.save();

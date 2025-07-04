@@ -130,3 +130,43 @@ code {
   text-align: center;
   margin-top: 1rem;
 }
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.success-message {
+  color: #28a745;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.verification-message {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.back-to-login-btn {
+  background-color: #6c757d !important;
+  color: white !important;
+}
+
+.back-to-login-btn:hover {
+  background-color: #545b62 !important;
+}
+
+.resend-verification-btn {
+  background-color: transparent !important;
+  color: #007bff !important;
+  border: 1px solid #007bff !important;
+  margin-top: 0.5rem;
+}
+
+.resend-verification-btn:hover {
+  background-color: #007bff !important;
+  color: white !important;
+}
