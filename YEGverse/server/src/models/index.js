@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
+    firebaseUid: {
+        type: String,
+        required: true,
+        unique: true,
+    },
     username: {
         type: String,
         required: true,
@@ -11,9 +16,17 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    password: {
+    displayName: {
         type: String,
-        required: true,
+        default: null,
+    },
+    photoURL: {
+        type: String,
+        default: null,
+    },
+    provider: {
+        type: String,
+        default: 'email', // 'email' or 'google'
     },
     createdAt: {
         type: Date,

@@ -150,3 +150,6 @@ docker-compose.yml
 # Testing
 coverage/
 .nyc_output/
+
+serviceAccountKey.json
+/client/src/firebase/firebase-config.js
