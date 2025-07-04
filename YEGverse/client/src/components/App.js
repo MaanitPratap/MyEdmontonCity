@@ -1,22 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider, useAuth } from '../contexts/AuthContext';
+import { AuthProvider } from '../contexts/AuthContext';
 import Home from '../pages/Home';
 import Login from './Login';
+import Navbar from './layout/Navbar';
+import { useAuth } from '../contexts/AuthContext';
 
 const AppContent = () => {
-  const { currentUser, logout } = useAuth();
+  const { currentUser } = useAuth();
 
   return (
     <Router>
       <div className="app">
-        {currentUser && (
-          <nav className="navbar">
-            <span>Welcome, {currentUser.email}</span>
-            <button onClick={logout}>Logout</button>
-          </nav>
-        )}
-        
+        <Navbar />
         <Routes>
           <Route 
             path="/" 
