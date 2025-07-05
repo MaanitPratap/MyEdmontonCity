@@ -1,6 +1,8 @@
 .home-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: linear-gradient(100deg, rgba(37, 99, 235, 0.5) 30%, rgba(249, 115, 22, 0.5) 70%),
+                                            url('../../public/images/login-bg.png');
+  background-position: center top -100px;
   position: relative;
   overflow: hidden;
 }
@@ -81,7 +83,7 @@
 
 .cta-button-primary {
   background: rgba(255, 255, 255, 0.95);
-  color: #4a5568;
+  color: #1d4ed8;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
 }
 
@@ -92,16 +94,16 @@
 }
 
 .cta-button-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(249, 115, 22, 0.9);
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(249, 115, 22, 0.5);
   backdrop-filter: blur(20px);
 }
 
 .cta-button-secondary:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(249, 115, 22, 1);
+  border-color: rgba(249, 115, 22, 0.8);
 }
 
 .features-section {
@@ -121,7 +123,7 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #1e40af;
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
 }
@@ -129,7 +131,7 @@
 .features-subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: #718096;
+  color: #64748b;
   margin-bottom: 4rem;
   max-width: 600px;
   margin-left: auto;
@@ -162,7 +164,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  background: linear-gradient(90deg, #2563eb, #1d4ed8, #f97316);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -186,20 +188,20 @@
 .feature-title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #1e40af;
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
 }
 
 .feature-description {
-  color: #718096;
+  color: #64748b;
   line-height: 1.6;
   font-size: 1rem;
 }
 
 .stats-section {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
   color: white;
   position: relative;
   z-index: 2;
@@ -231,7 +233,7 @@
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  color: #f093fb;
+  color: #f97316;
   display: block;
   line-height: 1;
   margin-bottom: 0.5rem;

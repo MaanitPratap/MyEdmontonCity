@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background: linear-gradient(90deg, #2563eb, #1d4ed8, #f97316, #ea580c);
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
 }
@@ -33,7 +33,7 @@
 .login-form h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #2d3748;
+  color: #1e40af;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -48,7 +48,7 @@
   transform: translateX(-50%);
   width: 40px;
   height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #2563eb, #f97316);
   border-radius: 2px;
 }
 
@@ -62,16 +62,16 @@
   box-sizing: border-box;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(255, 255, 255, 0.8);
-  color: #2d3748;
+  color: #1e40af;
   font-weight: 500;
 }
 
 .login-form input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #2563eb;
   box-shadow: 
-    0 0 0 3px rgba(102, 126, 234, 0.1),
-    0 4px 12px rgba(102, 126, 234, 0.15);
+    0 0 0 3px rgba(37, 99, 235, 0.1),
+    0 4px 12px rgba(37, 99, 235, 0.15);
   background: rgba(255, 255, 255, 1);
   transform: translateY(-1px);
 }
@@ -105,13 +105,13 @@
 }
 
 .login-form button[type="submit"] {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3457ba;
   color: white;
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 24px rgba(1, 76, 238, 0.4);
 }
 
 .login-form button[type="submit"]:hover {
-  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.5);
 }
 
 .login-form button[type="submit"]::before {
@@ -131,7 +131,7 @@
 
 .google-signin-btn {
   background: white !important;
-  color: #3c4043 !important;
+  color: #1e40af !important;
   border: 2px solid #e2e8f0 !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   position: relative;
@@ -142,8 +142,8 @@
 }
 
 .google-signin-btn:hover {
-  border-color: #dadce0 !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15) !important;
 }
 
 .google-signin-btn::before {
@@ -169,14 +169,14 @@
 .divider span {
   background: rgba(255, 255, 255, 0.95);
   padding: 0 1.5rem;
-  color: #718096;
+  color: #64748b;
   font-weight: 500;
   font-size: 0.9rem;
 }
 
 .login-form button[type="button"]:last-of-type {
   background-color: transparent !important;
-  color: #667eea !important;
+  color: #2563eb !important;
   border: none !important;
   font-weight: 500 !important;
   text-decoration: none !important;
@@ -185,13 +185,13 @@
 }
 
 .login-form button[type="button"]:last-of-type:hover {
-  color: #764ba2 !important;
-  background-color: rgba(102, 126, 234, 0.05) !important;
+  color: #f97316 !important;
+  background-color: rgba(37, 99, 235, 0.05) !important;
   transform: translateY(0) !important;
 }
 
 .error {
-  color: #e53e3e;
+  color: #dc2626;
   text-align: center;
   margin-top: 1.5rem;
   padding: 1rem;
@@ -202,7 +202,7 @@
 }
 
 .success-message {
-  color: #38a169;
+  color: #16a34a;
   text-align: center;
   margin-top: 1.5rem;
   padding: 1rem;
@@ -215,7 +215,7 @@
 .verification-message {
   text-align: center;
   margin-bottom: 2rem;
-  color: #4a5568;
+  color: #1e40af;
   line-height: 1.6;
   font-weight: 500;
   padding: 1.5rem;
@@ -225,13 +225,13 @@
 }
 
 .back-to-login-btn {
-  background: linear-gradient(135deg, #718096 0%, #4a5568 100%) !important;
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%) !important;
   color: white !important;
-  box-shadow: 0 4px 12px rgba(113, 128, 150, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3) !important;
 }
 
 .back-to-login-btn:hover {
-  box-shadow: 0 6px 16px rgba(113, 128, 150, 0.4) !important;
+  box-shadow: 0 6px 16px rgba(100, 116, 139, 0.4) !important;
 }
 
 @keyframes gradientShift {
@@ -269,7 +269,7 @@
 }
 
 .login-form button:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
 

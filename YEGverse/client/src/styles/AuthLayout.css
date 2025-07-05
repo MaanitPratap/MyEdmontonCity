@@ -1,6 +1,11 @@
 .auth-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.8) 0%, rgba(249, 115, 22, 0.8) 100%),
+              url('../../public/images/login-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 

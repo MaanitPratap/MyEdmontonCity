@@ -5,18 +5,18 @@
   padding: 1.5rem 2rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  color: #2d3748;
+  color: #1e40af;
   border-bottom: 1px solid rgba(226, 232, 240, 0.8);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .navbar span {
   font-weight: 600;
-  color: #4a5568;
+  color: #1e40af;
 }
 
 .navbar button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #f97316 100%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -24,10 +24,10 @@
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .navbar button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
 }
